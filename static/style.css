@@ -1,0 +1,80 @@
+.login{
+    padding-top: 2em;
+    padding-bottom: 2em;
+    display: flex;
+}
+
+.login-button{
+    display: flex;
+    font-size: 2em;
+    margin: auto;
+    height: 80px;
+    width: 400px;
+    border: solid;
+    border-width: 1px;
+    border-color: #168f48;
+    background-color: #1aaa55;
+    text-decoration: none;
+}
+
+.login-button .text{
+    margin: auto;
+    color: white;
+}
+
+div{
+    display: block;
+}
+
+body{
+    font-family: 'Source Code Pro', monospace;
+}
+
+
+.week{
+    padding-top: 2em;
+    padding-bottom: 2em;
+    display: flex;
+}
+
+.week-button{
+    display: flex;
+    font-size: 2em;
+    margin: auto;
+    height: 80px;
+    width: 500px;
+    border: solid;
+    border-width: 1px;
+    border-color: #168f48;
+    background-color: #1aaa55;
+    text-decoration: none;
+}
+
+.week-button .text{
+    margin: auto;
+    color: white;
+}
+
+.day{
+    padding-top: 2em;
+    padding-bottom: 2em;
+    display: flex;
+}
+
+.day-button{
+    display: flex;
+    font-size: 2em;
+    margin: auto;
+    height: 80px;
+    width: 500px;
+    border: solid;
+    border-width: 1px;
+    border-color: #168f48;
+    background-color: #1aaa55;
+    text-decoration: none;
+}
+
+.day-button .text{
+    margin: auto;
+    color: white;
+}
