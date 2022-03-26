@@ -174,4 +174,4 @@ def logout():
 
 
 if __name__ == "__main__":
-    app.run(ssl_context='adhoc', port=8000, host="0.0.0.0")
+    app.run(ssl_context='adhoc', port=5000, host="0.0.0.0")
