@@ -1,3 +1,9 @@
+### Docker launch:
+``` shell
+$ docker build -t python-flask .
+
+$ docker run -p 5000:5000 python-flask
+```
 ### Login page:
 ![photo_2022-03-18_21-00-11](https://user-images.githubusercontent.com/85695187/159058746-fab11be1-ce83-4665-8eab-7fd04793e950.jpg)
 ### Starting page:
