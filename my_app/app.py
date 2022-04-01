@@ -18,6 +18,9 @@ from db import init_db_command
 from user import User
 from weather import get_gp, get_weather_date, get_list_weather
 from useragent import parse_useragent
+from dotenv import load_dotenv
+
+load_dotenv('my_app/setup_env.sh')
 
 GOOGLE_CLIENT_ID = os.environ.get("GOOGLE_CLIENT_ID", None)
 GOOGLE_CLIENT_SECRET = os.environ.get("GOOGLE_CLIENT_SECRET", None)
@@ -174,4 +177,4 @@ def logout():
 
 
 if __name__ == "__main__":
-    app.run(ssl_context='adhoc', port=5000, host="0.0.0.0")
+    app.run(ssl_context='adhoc', host="0.0.0.0", port=5000)
