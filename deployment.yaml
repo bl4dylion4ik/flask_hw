@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flask-server-deployment
+  labels:
+    service-name: flask-server
+spec:
+  replicas: 3
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  selector:
+    matchLabels:
+      service-name: flask-server
+  template:
+    metadata:
+      labels:
+        service-name: flask-server
+    spec:
+      containers:
+        - name: flask-server
+          image: loinj/my_flask_project_101:latest
+          ports:
+            - containerPort: 5000
+          env:
+            - name: GOOGLE_CLIENT_ID
+              valueFrom:
+                secretKeyRef:
+                  name: google-secret
+                  key: GOOGLE_CLIENT_ID
+            - name: GOOGLE_CLIENT_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: google-secret
+                  key: GOOGLE_CLIENT_SECRET
