@@ -1,3 +1,10 @@
+### K8s:
+``` shell
+$ kubectl apply -f google-secret
+$ kubectl apply -f deployment.yaml
+$ kubectl port-forward flask-server-deployment-6d7684784-5fdrp 5000:5000
+```
+![image](https://user-images.githubusercontent.com/85695187/161314909-05e87361-3a4d-4870-9856-8e69964ffb69.png)
 ### Docker launch:
 ``` shell
 $ docker build -t python-flask .
